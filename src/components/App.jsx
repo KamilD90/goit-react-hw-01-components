@@ -1,3 +1,6 @@
+import Profile from './Profile';
+import user from './user';
+
 export const App = () => {
   return (
     <div
@@ -7,10 +10,13 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
+      <Profile {...user} />
       React homework template
     </div>
   );
 };
+
+export default App;
