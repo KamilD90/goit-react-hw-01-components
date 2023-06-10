@@ -1,12 +1,11 @@
-import { data } from './data.json';
 import PropTypes from 'prop-types';
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section class="statistics">
+    <section className="statistics">
       {title && <h2 className="title">{title}</h2>}
 
-      <ul class="stat-list">
+      <ul className="stat-list">
         {stats.map(stat => (
           <li key={stat.id} className="item">
             <span className="label">{stat.label}</span>

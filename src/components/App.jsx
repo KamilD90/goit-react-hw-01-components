@@ -1,5 +1,5 @@
 import Friends from './Friends/Friends.jsx';
-import friends from './Friends/friends.json';
+import friendsData from './Friends/friends.json';
 
 import Profile from './Profile/Profile.jsx';
 import user from './Profile/user.json';
@@ -18,7 +18,7 @@ export default function App() {
         stats={user.stats}
       />
       <Statistics stats={data} />
-      <Friends friends={friends} />;
+      <Friends friends={friendsData} />;
     </div>
   );
 }
