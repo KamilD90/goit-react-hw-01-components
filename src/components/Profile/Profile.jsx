@@ -1,7 +1,6 @@
-import user from './user.json';
 import PropTypes from 'prop-types';
 
-export const Profile = ({
+const Profile = ({
   username,
   tag,
   location,
@@ -46,3 +45,5 @@ Profile.propTypes = {
     likes: PropTypes.number.isRequired,
   }),
 };
+
+export default Profile;
