@@ -1,3 +1,5 @@
+import css from './App.css';
+
 import Friends from './Friends/Friends.jsx';
 import friendsData from './Friends/friends.json';
 
@@ -12,7 +14,7 @@ import Transactions from './Transactions/Transactions.jsx';
 
 export default function App() {
   return (
-    <div>
+    <div className={css.main}>
       <Profile
         username={user.username}
         tag={user.tag}

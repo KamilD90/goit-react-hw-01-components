@@ -1,11 +1,20 @@
 import PropTypes from 'prop-types';
+import css from './FriendListItem.module.css';
+import clsx from 'clsx';
 
 const FriendsListItem = ({ friend: { avatar, name, isOnline, id } }) => {
+  const statusClass = clsx(css.status, { [css.online]: isOnline });
+
   return (
-    <li key={id} className="item">
-      <span className="status">{isOnline}&#x25CF;</span>
-      <img className="avatar" src={avatar} alt={`${name} avatar`} width="48" />
-      <p className="name">{name}</p>
+    <li key={id} className={css.list_item}>
+      <span className={statusClass}>{isOnline}&#x25CF;</span>
+      <img
+        className={css.avatar}
+        src={avatar}
+        alt={`${name} avatar`}
+        width="48"
+      />
+      <p className={css.name}>{name}</p>
     </li>
   );
 };
