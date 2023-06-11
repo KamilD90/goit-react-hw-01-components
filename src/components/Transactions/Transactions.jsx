@@ -1,4 +1,3 @@
-import transactionsData from './transactions.json';
 import PropTypes from 'prop-types';
 
 const Transactions = ({ transactions }) => {
