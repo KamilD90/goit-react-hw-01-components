@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import friendsData from './friends.json';
 import FriendListItem from './FriendListItem/FriendListItem';
 
