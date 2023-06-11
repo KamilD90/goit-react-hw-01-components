@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const FriendsListItem = ({ friend: { avatar, name, isOnline, id } }) => {
   return (
     <li key={id} className="item">
-      <span classname="status">{isOnline}&#x25CF;</span>
+      <span className="status">{isOnline}&#x25CF;</span>
       <img className="avatar" src={avatar} alt={`${name} avatar`} width="48" />
       <p className="name">{name}</p>
     </li>

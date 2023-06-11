@@ -7,6 +7,9 @@ import user from './Profile/user.json';
 import data from './Statistics/data.json';
 import Statistics from './Statistics/Statistic.jsx';
 
+import transactionsData from './Transactions/transactions.json';
+import Transactions from './Transactions/Transactions.jsx';
+
 export default function App() {
   return (
     <div>
@@ -19,6 +22,7 @@ export default function App() {
       />
       <Statistics stats={data} />
       <Friends friends={friendsData} />;
+      <Transactions transactions={transactionsData} />
     </div>
   );
 }
